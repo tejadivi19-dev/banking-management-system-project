@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<div class="row mb-4">
+  <div class="col-md-5">
+    <div class="card text-white bg-primary shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title mb-1">Hello, {{ account.name }} 👋</h5>
+        <p class="mb-2 opacity-75">Account No: {{ account.account_number }}</p>
+        <h2 class="mb-0">Rs. {{ "%.2f"|format(account.balance) }}</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row g-3">
+  <div class="col-6 col-md-3">
+    <a href="{{ url_for('deposit') }}" class="btn btn-outline-success w-100 py-3">➕<br>Deposit</a>
+  </div>
+  <div class="col-6 col-md-3">
+    <a href="{{ url_for('withdraw') }}" class="btn btn-outline-danger w-100 py-3">➖<br>Withdraw</a>
+  </div>
+  <div class="col-6 col-md-3">
+    <a href="{{ url_for('transfer') }}" class="btn btn-outline-info w-100 py-3">🔁<br>Transfer</a>
+  </div>
+  <div class="col-6 col-md-3">
+    <a href="{{ url_for('history') }}" class="btn btn-outline-secondary w-100 py-3">📜<br>History</a>
+  </div>
+  <div class="col-6 col-md-3">
+    <a href="{{ url_for('change_pin') }}" class="btn btn-outline-warning w-100 py-3">🔑<br>Change PIN</a>
+  </div>
+</div>
+{% endblock %}
