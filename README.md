@@ -19,6 +19,28 @@ password/PIN hashing, and a modular Flask structure.
 - 🔑 **Change PIN** — with old-PIN verification
 - 💾 **Persistent storage** — SQLite database via SQLAlchemy (data survives restarts, unlike an in-memory dictionary)
 
+## 🏦 Banking System
+
+A simple, secure way to manage your money online.
+
+## 📸 Application Screenshots
+
+### 💳 Banking Interface
+![Banking Interface](images/interface.png)
+
+
+### 🔐 Login Page
+![Login Page](images/login.png)
+
+### 📝 Create Account
+![Create Account](images/create_acc.png)
+
+### 💳 Banking Interface
+![Banking Interface](images/interface.png)
+
+### 📊 Dashboard
+![Dashboard](images/dashboard.png)
+
 ## Tech Stack
 
 | Layer      | Technology            |
