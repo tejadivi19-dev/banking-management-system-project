@@ -18,23 +18,6 @@ password/PIN hashing, and a modular Flask structure.
 - 📜 **Transaction history** — every action is logged with a timestamp
 - 🔑 **Change PIN** — with old-PIN verification
 - 💾 **Persistent storage** — SQLite database via SQLAlchemy (data survives restarts, unlike an in-memory dictionary)
-# 🏦 Banking System
-
-A simple, secure way to manage your money online.
-
-## 📸 Application Screenshots
-
-### 🔐 Login Page
-![Login Page](images/login.png)
-
-### 📊 Dashboard
-![Dashboard](images/dashboard.png)
-
-### 📝 Create Account
-![Create Account](images/create_acc.png)
-
-### 💳 Banking Interface
-![Banking Interface](images/interface.png)
 
 ## Tech Stack
 
@@ -55,11 +38,6 @@ banking-system/
 ├── models.py           # Account and Transaction database models
 ├── helpers.py          # Account number generation, auth decorator
 ├── README.md
-└── images/
-|   ├── create_acc.png
-    ├── dashboard.png
-|   ├── interface.png
-    └── login.png
 ├── requirements.txt
 ├── templates/           # Jinja2 HTML templates
 │   ├── base.html
